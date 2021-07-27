@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ColorDisplay = ({ backgroundColor }) => {
+const ColorDisplay = ({ background }) => {
   return (
     <div
       style={{
-        backgroundColor,
+        backgroundImage: `url(${background})`,
+        background,
         width: '100rem',
         height: '100rem'
       }}
@@ -14,7 +15,7 @@ const ColorDisplay = ({ backgroundColor }) => {
 };
 
 ColorDisplay.propTypes = {
-  backgroundColor: PropTypes.string.isRequired,
+  background: PropTypes.string.isRequired,
 };
 
 export default ColorDisplay;
