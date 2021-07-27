@@ -3,12 +3,13 @@ import ColorDisplay from '../components/color-components/ColorDisplay';
 
 export default class RandomColor extends Component {
   state = {
-    changingColor: 'blue',
+    changingColor: '',
     interval: ''
   };
 
   updateColor() {
-    const color = ['blue', 'yellow', 'purple', 'orange', 'green'];
+    // eslint-disable-next-line max-len
+    const color = ['olivedrab', 'orange', 'dodgerblue', 'palevioletpink', 'cornsilk', 'gold'];
     const randomNumber = Math.floor(Math.random() * color.length);
     const assignColor = color[randomNumber];
     this.setState({ changingColor: assignColor });
