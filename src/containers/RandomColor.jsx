@@ -9,7 +9,7 @@ export default class RandomColor extends Component {
 
   updateColor() {
     // eslint-disable-next-line max-len
-    const color = ['olivedrab', 'orange', 'dodgerblue', 'palevioletpink', 'cornsilk', 'gold'];
+    const color = ['olivedrab', 'orange', 'dodgerblue', 'palevioletred', 'cornsilk', 'gold'];
     const randomNumber = Math.floor(Math.random() * color.length);
     const assignColor = color[randomNumber];
     this.setState({ changingColor: assignColor });
