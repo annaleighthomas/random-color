@@ -7,11 +7,11 @@ export default class RandomColor extends Component {
   };
 
   render() {
-    const color = ['blue', 'yellow', 'purple', 'orange', 'green'];
+    // const colors = ['blue', 'yellow', 'purple', 'orange', 'green'];
     const { changingColor } = this.state;
     return (
       <>
-        <ColorDisplay />
+        <ColorDisplay backgroundColor={changingColor} />
       </>
 
     );
